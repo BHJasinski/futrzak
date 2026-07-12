@@ -11,7 +11,7 @@
   <meta property="og:description" content="Profesjonalna, spokojna i empatyczna opieka weterynaryjna blisko domu." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="pl_PL" />
-  <meta property="og:image" content="assets/gabinet-futrzak-tablica.jpg" />
+  <meta property="og:image" content="assets/logo-futrzak.png" />
 
   <title>Gabinet Weterynaryjny Futrzak | Warszawa, Praga-Południe</title>
 
@@ -20,12 +20,59 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 
+  <style>
+    /* Logo Futrzak */
+    .brand-logo-link {
+      gap: 12px;
+    }
+
+    .site-logo {
+      display: block;
+      width: 138px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .brand-subtitle {
+      color: var(--muted);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      line-height: 1.25;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .footer-logo-link {
+      display: inline-flex;
+    }
+
+    .footer-logo {
+      width: 168px;
+    }
+
+    @media (max-width: 640px) {
+      .site-logo {
+        width: 108px;
+      }
+
+      .brand-subtitle {
+        display: none;
+      }
+
+      .footer-logo {
+        width: 150px;
+      }
+    }
+  </style>
+
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "VeterinaryCare",
     "name": "Gabinet Weterynaryjny Futrzak Beata Pędziak-Koperska",
-    "image": "assets/gabinet-futrzak-tablica.jpg",
+    "image": "assets/logo-futrzak.png",
     "telephone": "+48664365058",
     "address": {
       "@type": "PostalAddress",
@@ -75,21 +122,15 @@
 
   <header class="site-header" id="top">
     <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="Futrzak, strona główna">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 64 64" role="img">
-            <circle cx="32" cy="25" r="10"></circle>
-            <path d="M32 35c-9 0-17 6-17 14 0 5 4 8 9 8 3 0 6-1 8-4 2 3 5 4 8 4 5 0 9-3 9-8 0-8-8-14-17-14Z"></path>
-            <circle cx="14" cy="31" r="5"></circle>
-            <circle cx="50" cy="31" r="5"></circle>
-            <circle cx="20" cy="17" r="5"></circle>
-            <circle cx="44" cy="17" r="5"></circle>
-          </svg>
-        </span>
-        <span>
-          <strong>Futrzak</strong>
-          <small>Gabinet Weterynaryjny</small>
-        </span>
+      <a class="brand brand-logo-link" href="#top" aria-label="Futrzak, strona główna">
+        <img
+          src="assets/logo-futrzak.png"
+          alt="Futrzak – Gabinet Weterynaryjny"
+          class="site-logo"
+          width="190"
+          height="126"
+        />
+        <span class="brand-subtitle">Gabinet Weterynaryjny</span>
       </a>
 
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
@@ -474,21 +515,15 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a class="brand footer-brand" href="#top">
-          <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 64 64">
-              <circle cx="32" cy="25" r="10"></circle>
-              <path d="M32 35c-9 0-17 6-17 14 0 5 4 8 9 8 3 0 6-1 8-4 2 3 5 4 8 4 5 0 9-3 9-8 0-8-8-14-17-14Z"></path>
-              <circle cx="14" cy="31" r="5"></circle>
-              <circle cx="50" cy="31" r="5"></circle>
-              <circle cx="20" cy="17" r="5"></circle>
-              <circle cx="44" cy="17" r="5"></circle>
-            </svg>
-          </span>
-          <span>
-            <strong>Futrzak</strong>
-            <small>Gabinet Weterynaryjny</small>
-          </span>
+        <a class="brand footer-brand footer-logo-link" href="#top" aria-label="Futrzak, powrót na górę strony">
+          <img
+            src="assets/logo-futrzak.png"
+            alt="Futrzak – Gabinet Weterynaryjny"
+            class="site-logo footer-logo"
+            width="190"
+            height="126"
+            loading="lazy"
+          />
         </a>
         <p>Profesjonalna i empatyczna opieka weterynaryjna na warszawskiej Pradze-Południe.</p>
       </div>
